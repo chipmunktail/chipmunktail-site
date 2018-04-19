@@ -1,0 +1,20 @@
+.menu{
+    background-color: #e2e2e2;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 5px;
+}
+li{
+    word-break: break-all;
+    color: #222222;
+    margin: 5px;
+    flex: 1;
+    background-color: #fff;
+}

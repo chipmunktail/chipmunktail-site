@@ -1,0 +1,10 @@
+.article-block{
+    display: flex;
+    height: 110px;
+}
+.article-block img{
+    width: 160px;
+}
+.article-block .info{
+
+}
