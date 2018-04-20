@@ -18,3 +18,8 @@ li{
     flex: 1;
     background-color: #fff;
 }
+.menu a{
+    text-decoration: none;
+    color: #222222;
+    display: block;
+}
