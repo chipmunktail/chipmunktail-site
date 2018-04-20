@@ -8,8 +8,8 @@ class ArticleList extends Component{
         super(props);
         this.state = {articleList: []};
     }
-    
-    
+
+
     componentWillMount(){
         axios.get('https://www.easy-mock.com/mock/5ad94f6eb3c0752c6acdcd2d/example/articles')
             .then((res)=>{
@@ -19,7 +19,7 @@ class ArticleList extends Component{
                 console.log(err)
             });
     }
-    
+
     render(){
         return(
             <div className="article-list">
@@ -28,7 +28,8 @@ class ArticleList extends Component{
                         this.state.articleList.map((item)=>{
                             return(
                                 <li key={item.title}>
-                                    <ArticleBlock/>
+                                    <ArticleBlock title={item.title} content={item.content}
+                                    aat={item.aat} img={item.img} href={item.href}/>
                                 </li>
                             )
                         })
