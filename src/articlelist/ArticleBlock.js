@@ -1,17 +1,17 @@
 import React, {Component} from 'react'
 import './ArticleBlock.css'
-import axios from 'axios'
+// import axios from 'axios'
 
 class ArticleBlock extends Component {
-    constructor(props) {
-        super(props);
-        // this.state = {title: this.props.title,
-        //     content:this.props.content,
-        //     aat:this.props.aat,
-        //     img:this.props.img,
-        //     href:this.props.href,};
-
-    }
+    // constructor(props) {
+    //     super(props);
+    //     // this.state = {title: this.props.title,
+    //     //     content:this.props.content,
+    //     //     aat:this.props.aat,
+    //     //     img:this.props.img,
+    //     //     href:this.props.href,};
+    //
+    // }
 
 
     componentWillMount() {
@@ -19,7 +19,7 @@ class ArticleBlock extends Component {
     }
 
     render() {
-        const {title,content,aat,img,href}=this.props;
+        const {title,content,aat,img,/*href*/}=this.props;
         return (
             <div className="article-block">
                 <img alt="img" src={img}/>
