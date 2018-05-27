@@ -1,34 +1,34 @@
-import React,{Component} from 'react'
+import React, {Component} from 'react'
 import './Menu.css'
-import axios from 'axios'
 
-class Menu extends Component{
-    constructor(props) {
+class Menu extends Component {
+    constructor (props) {
         super(props);
         this.state = {list: []};
+        this.changeMenu=this.changeMenu.bind(this)
     }
-    
-    
-    
-    componentWillMount(){
-        axios.get('https://www.easy-mock.com/mock/5ad94f6eb3c0752c6acdcd2d/example/getMenus')
-            .then((res)=>{
-                this.setState({list:res.data.list})
-            })
-            .catch((err)=>{
-                console.log(err)
-            });
+
+
+    componentWillMount () {
+        const menu = [{"text": "子图", "href": "1"},
+            {"text": "聊图", "href": "2"}]
+        this.setState({list: menu})
     }
-    
-    render(){
-        return(
+
+    changeMenu=(event)=>{
+        // event.persist()
+        this.props.onChange(event._targetInst.index);
+    }
+
+    render () {
+        return (
             <div className="menu">
                 <ul>
                     {
-                        this.state.list.map((item)=>{
-                            return(
-                                <li key={item.text}>
-                                <a href={item.href}>{item.text}</a>
+                        this.state.list.map((item) => {
+                            return (
+                                <li key={item.text} onClick={this.changeMenu}>
+                                    {item.text}
                                 </li>)
                         })
                     }

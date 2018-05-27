@@ -6,3 +6,24 @@
     margin-right: 5px;
     padding: 5px;
 }
+.img{
+    width: 100%;
+}
+.action{
+    text-align: right;
+}
+.action span{
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.action span:nth-child(1){
+    color: red;
+}
+.page{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}

@@ -5,11 +5,25 @@ import ArticleList from './articlelist/ArticleList'
 import SiderBar from './siderbar/SiderBar'
 
 class App extends Component {
-    render() {
+    constructor (props) {
+        super(props)
+        this.state={
+            type:0
+        }
+        this.handChildChange = this.handChildChange.bind(this)
+    }
+
+    handChildChange (e) {
+        this.setState({
+            type:e
+        })
+    }
+
+    render () {
         return (
             <div className="App">
-                <Menu/>
-                <ArticleList/>
+                <Menu onChange={this.handChildChange}/>
+                <ArticleList type={this.state.type}/>
                 <SiderBar/>
             </div>
         );
