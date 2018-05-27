@@ -10,8 +10,8 @@ class Menu extends Component {
 
 
     componentWillMount () {
-        const menu = [{"text": "å­å›¾", "href": "1"},
-            {"text": "èŠå›¾", "href": "2"}]
+        const menu = [{"text": "×ÓÍ¼", "href": "1"},
+            {"text": "ÁÄÍ¼", "href": "2"}]
         this.setState({list: menu})
     }
 
