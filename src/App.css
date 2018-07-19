@@ -1,8 +1,5 @@
 .App {
-  width: 1020px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .App-logo {
@@ -11,10 +8,19 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: rgb(216, 216, 216);
+  min-height: 220px;
   padding: 20px;
   color: white;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+}
+.menu span{
+  margin: 0 5px;
+  cursor: pointer;
 }
 
 .App-title {
@@ -28,4 +34,8 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.active{
+  color: #1f6faf;
 }

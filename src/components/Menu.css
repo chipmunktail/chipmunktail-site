@@ -1,0 +1,16 @@
+.ul,.li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.item{
+    text-decoration: none;
+    color: #606060;
+}
+.active{
+    color: #00a2ff;
+}
